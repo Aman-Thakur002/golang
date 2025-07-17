@@ -27,7 +27,7 @@ func main(){
 
 
 
- //other way to initalise not nil sliec
+ //other way to initalise not nil slice
  nums2 := []int{}
  nums2 = append(nums2, 4)
  fmt.Println("Not null slice 2",nums2)
@@ -44,8 +44,8 @@ func main(){
  fmt.Println("Sliced array of nums3",nums3[:3])
  fmt.Println("Sliced array of nums3",nums3[0:])
 
- //slices package
 
+ //slices package
  s1 := []int{1,2}
  s2 := []int{1,2}
  s3 := []int{1,3}
