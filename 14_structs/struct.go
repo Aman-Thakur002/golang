@@ -8,12 +8,21 @@ import (
 	"time"
 )
 
+type customer struct {
+	name string
+	phone string
+}
+
 type order struct {
 	id        int
 	amount    float32
 	status    string
-	createdAt time.Time // nano second precision
+	createdAt time.Time          // -> nano second precision
+	customer                     // -> this is struct embedding , referencing a struct in struct
 }
+
+
+
 // contructor like approach
 func newOrder(id int, amount float32, status string) order{
 	 myOrder := order {
@@ -37,11 +46,21 @@ func (o order) getAmount() float32 {
 }
 
 func main() {
+    
+	// newCustomer := customer{
+	// 	name : "Thakur",
+	// 	phone : "98237429",
+	// }
 
 	myOrder := order{
 		id:     1,
 		amount: 100.0,
 		status: "pending",
+		// customer : newCustomer,              // 1st approach 
+		customer : customer{                    // 2nd way
+			name:  "Thakur",
+			phone : "8923649823",                 
+		},
 	}
 
 	fmt.Println(myOrder)
