@@ -52,13 +52,6 @@ func main() {  // func = function keyword, main = function name
    fmt.Printf("Hello, %s! You are %d years old.\n", name, age)
    // %s = string placeholder, %d = integer placeholder
    
-   // 🌟 MULTIPLE WAYS TO SAY HELLO
-   fmt.Println("🌍 Hello, World!")
-   fmt.Println("🇺🇸 Hello, World!")
-   fmt.Println("🇪🇸 ¡Hola, Mundo!")
-   fmt.Println("🇫🇷 Bonjour, le Monde!")
-   fmt.Println("🇩🇪 Hallo, Welt!")
-   fmt.Println("🇯🇵 こんにちは、世界！")
    
    // 🎉 CONGRATULATIONS MESSAGE
    fmt.Println("\n🎉 Congratulations!")
